@@ -3,10 +3,10 @@
 -- Create a temporary table for results of the subquery
 CREATE TEMP TABLE temp_sightings AS
 SELECT *
-FROM UFO_Sightings
+FROM ufo_sightings
 WHERE Country = 'us' AND EXTRACT(YEAR FROM (date_time)) = (
     SELECT MAX(EXTRACT(YEAR FROM date_time))
-    FROM UFO_Sightings
+    FROM ufo_sightings
 );
 
 -- Export the results to a CSV file

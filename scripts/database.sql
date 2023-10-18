@@ -1,6 +1,6 @@
 -- For ufo data
 
-CREATE TABLE UFO_Sightings (
+CREATE TABLE ufo_sightings (
     Date_Time TIMESTAMP,
     City VARCHAR(255),
     State_Province VARCHAR(255),
